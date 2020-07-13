@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS bamazon;
 CREATE DATABASE bamazon;
 USE bamazon;
@@ -11,15 +12,14 @@ stock_quantity INTEGER (10),
 primary key (item_id)
 );
 
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Baseball Hat', 'Apparel', '20', '100');
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Blender', 'Appliance', '50', '35');
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Bike', 'Toys', '50', '35'); 
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('TV', 'Appliance', '1020', '15');
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Laptop', 'Technology', '850', '28');
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Cell Phone', 'Phones', '425', '10');
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Scooter', 'Toys', '35', '33');
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Bike Helmet', 'Toys', '50', '12'); 
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Cell Phone Case', 'Phones', '15', '42');
-INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Bar Soap', 'Household', '1', '1200'); 
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Fishing Pole', 'Outdoor', '25', '30');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Wiper Fluid', 'Automotive', '5', '60');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Pull Wagon', 'Outdoor', '30', '44');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Pillow', 'Home Decor', '12', '27');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Trash Bags', 'Cleaning Supplies', '10', '77');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Basketball', 'Outdoor', '18', '33');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Toaster', 'Appliance', '27', '27');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Desk Lamp', 'Appliance', '21', '20');
+INSERT INTO products (product_name, department_name, price, Stock_quantity) values ('Rubber Chicken', 'Toys', '6', '37');
 
-SELECT * FROM products.stock_quantity;
+SELECT * FROM products
